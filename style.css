@@ -276,13 +276,16 @@ footer h5{
     width: 100%;
   }
   .logo img{
-    width: 200%;
+    width: 100%;
     height: 10em;
   }
     #menu{
         visibility: visible;
         height: 1em; 
         margin-top: 40px; 
+    }
+    .buy img{
+        width:10%;
     }
     .rows .col-3 img{
         width: 33%;
