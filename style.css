@@ -70,7 +70,7 @@ nav a:hover{
 }
 .buy img{
     padding-top:10px;
-    width: 10%;
+    width: 30%;
     height: 1em;
 }
 .buy a{
@@ -285,7 +285,7 @@ footer h5{
         margin-top: 40px; 
     }
     .buy img{
-        width:10%;
+        width:50%;
     }
     .rows .col-3 img{
         width: 33%;
