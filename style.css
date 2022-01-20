@@ -272,6 +272,13 @@ footer h5{
   .navbar{
     background-color:transparent;
   }
+    .logo{
+    width: 100%;
+  }
+  .logo img{
+    width: 200%;
+    height: 10em;
+  }
     #menu{
         visibility: visible;
         height: 1em; 
