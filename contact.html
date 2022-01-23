@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
   <section class="header-section">
     <div class="containner">
       <header class="navbar">
@@ -20,101 +19,94 @@
         <nav>
           <ul>
             <div id="menu">
-              <img src="menu.png" alt="">
-              <div class="ol-menu">
-                <ol>
-                  <li><a href="index.html">Vetements</a></li>
-                  <li><a href="elecronic.html">Electronic</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ol>
-              </div>
+              <img id="click_img" src="menu.png" alt="">
+
             </div>
             <li><a href="index.html">Vetements</a></li>
             <li><a href="elecronic.html">Electronic</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+
         </nav>
-
       </header>
+      <div id="menues" class="olmenu">
+        <ol>
+          <li><a href="index.html">Vetements</a></li>
+          <li><a href="elecronic.html">Electronic</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ol>
+      </div>
 
-  </section>
+      <div class="container">
+        <span class="big-circle"></span>
+        <img src="images/imgstar/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              contacter nous pour plus d'infos
+            </p>
 
+            <div class="info">
+              <div class="information">
+                <img src="images/imgstar/location.png" class="icon" alt="" />
+                <p>CAP - HAITIEN - HAITI</p>
+              </div>
 
-  <div class="container">
-    <span class="big-circle"></span>
-    <img src="imgstar/shape.png" class="square" alt="" />
-    <div class="form">
-      <div class="contact-info">
-        <h3 class="title">Let's get in touch</h3>
-        <p class="text">
-          contacter nous pour plus d'infos
-        </p>
+              <div class="information">
+                <img src="images/imgstar/phone.png" class="icon" alt="" />
+                <p>+509 4612-3390</p>
+              </div>
+            </div>
 
-        <div class="info">
-          <div class="information">
-            <img src="imgstar/location.png" class="icon" alt="" />
-            <p>CAP - HAITIEN - HAITI</p>
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="information">
-            <img src="imgstar/phone.png" class="icon" alt="" />
-            <p>+509 4612-3390</p>
-          </div>
-        </div>
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
 
-        <div class="social-media">
-          <p>Connect with us :</p>
-          <div class="social-icons">
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
+            <form action="https://formspree.io/f/xyyozjbw" method="POST" id="my-form">
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input placeholder="Username" type="text" name="name" class="input" />
+
+              </div>
+              <div class="input-container">
+                <input placeholder="Mail" type="email" name="email" class="input" />
+
+              </div>
+              <div class="input-container">
+                <input placeholder="Phone" type="tel" name="phone" class="input" />
+
+              </div>
+              <div class="input-container textarea">
+                <textarea placeholder="Message" name="message" class="input"></textarea>
+
+              </div>
+              <input type="submit" value="Send" class="btn" />
+            </form>
           </div>
+          <div id="status"></div>
         </div>
       </div>
 
-      <div class="contact-form">
-        <span class="circle one"></span>
-        <span class="circle two"></span>
-
-        <form action="https://formspree.io/f/xyyozjbw" method="POST" id="my-form">
-          <h3 class="title">Contact us</h3>
-          <div class="input-container">
-            <input type="text" name="name" class="input" />
-            <label for="">Username</label>
-            <span>Username</span>
-          </div>
-          <div class="input-container">
-            <input type="email" name="email" class="input" />
-            <label for="">Email</label>
-            <span>Email</span>
-          </div>
-          <div class="input-container">
-            <input type="tel" name="phone" class="input" />
-            <label for="">Phone</label>
-            <span>Phone</span>
-          </div>
-          <div class="input-container textarea">
-            <textarea name="message" class="input"></textarea>
-            <label for="">Message</label>
-            <span>Message</span>
-          </div>
-          <input type="submit" value="Send" class="btn" />
-        </form>
-      </div>
-      <div id="status"></div>
-    </div>
-  </div>
-
-  <script src="index.js"></script>
 </body>
 
 </html>
