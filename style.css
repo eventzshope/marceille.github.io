@@ -266,8 +266,82 @@ footer h5{
     margin-left: 30px;
 }
 
+/*style pour Avis des clients*/
+.avis{
+  background-color: rgba(131, 185, 176, 0.548);
+}
+.avis h2{
+  text-align: center;
+  padding-top: 20px;
+}
+.comments{
+ display: flex;
+ flex-wrap: wrap;
+ padding:30px;
+}
+.comments1,.comments2,.comments3{
+  flex: 1;
+  display: flex;
+  margin-right:20px ;
+  background-image: radial-gradient(#fff, #d8f6fc9d); 
+  padding-left: 20px;
+  padding-top: 20px;
+  
+}
+.profil1{
+  width: 90%;
+}
+.profil1 img{
+  width: 60%;
+  height:5em;
+  border-radius: 50%;
+margin-left: 20%;
+}
+.comments .love{
+  width: 20%;
+  height: 2em;
+  margin-top:50px ;
+}
+.comments .nmber{
+  margin-top:54px ;
+}
+.comments p{
+  padding-bottom: 10px;
+}
+/*fin pour avis*/
+
+/*event click like produits*/
+.col-4 #coeur1{
+  margin-right: -120px;
+}
+.col-4 .coeur{
+  width: 15%;
+  height: 1.7em;
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  
+}
+.col-4 .coeur1{
+  visibility: hidden;
+  width: 20%;
+  height: 2.7em;
+  float: right;
+  margin-right:-40px;
+  cursor: pointer;
+  margin-top: -6px;
+  
+}
+.col-4 .nn{
+  visibility: visible;
 
 
+}
+.col-4 .nm{
+  visibility: hidden ;
+
+}
+/*fin*/
 
 /* all reponsive */
 /* responsive button */
@@ -301,11 +375,7 @@ footer h5{
         float: right;
         cursor: pointer;
     }
-.buy img:
-    {
-        width:2%;
-        heigth:1em;
-    }
+
     nav{
         visibility: hidden;
     }
@@ -393,6 +463,16 @@ footer h5{
 }
 .pub4{
   animation: pubb4 20s ease-out infinite forwards;
+}
+
+
+.avis .comments{
+ display: block;
+width: auto;
+ }
+
+ .avis .comments1, .avis .comments2,.avis .comments3{
+ margin-bottom: 20px;
 }
 }
 
@@ -908,13 +988,9 @@ textarea.input {
     visibility: visible;
   }
 }
+/*fin*/
 
-
-
-
-
-
-
+/* anim click menu*/
 @keyframes men{
   from{
     opacity: 0;
@@ -940,33 +1016,4 @@ textarea.input {
 }
 
 
-.col-4 #coeur1{
-  margin-right: -120px;
-}
-.col-4 .coeur{
-  width: 15%;
-  height: 1.7em;
-  float: right;
-  margin-right: 20px;
-  cursor: pointer;
-  
-}
-.col-4 .coeur1{
-  visibility: hidden;
-  width: 20%;
-  height: 2.7em;
-  float: right;
-  margin-right:-40px;
-  cursor: pointer;
-  margin-top: -6px;
-  
-}
-.col-4 .nn{
-  visibility: visible;
 
-
-}
-.col-4 .nm{
-  visibility: hidden ;
-
-}
