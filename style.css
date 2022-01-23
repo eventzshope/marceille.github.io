@@ -304,6 +304,7 @@ footer h5{
 .buy img:
     {
         width:2%;
+        heigth:1em;
     }
     nav{
         visibility: hidden;
