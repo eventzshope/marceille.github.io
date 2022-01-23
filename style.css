@@ -301,7 +301,10 @@ footer h5{
         float: right;
         cursor: pointer;
     }
-
+.buy img:
+    {
+        width:2%;
+    }
     nav{
         visibility: hidden;
     }
