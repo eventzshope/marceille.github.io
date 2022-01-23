@@ -23,81 +23,6 @@ var coeurvideclick5 = document.getElementById("coeurvide5");
 var coeurfull5 = document.getElementById("coeurfull5");
 
 
-btn.addEventListener('click', vues);
-
-function vues() {
-  menues.classList.toggle('vue');
-}
-
-//fin
-
-
-
-coeurvideclick.addEventListener('click',a);
-function a(){
-  coeurfull.classList.add('nn');
-  
-}
-coeurfull.addEventListener('click',a1);
-function a1(){
- coeurfull.classList.remove('nn')
-  
-}
-
-
-coeurvideclick1.addEventListener('click',b);
-function b(){
-  coeurfull1.classList.add('nn');
-  
-}
-coeurfull1.addEventListener('click',b1);
-function b1(){
- coeurfull1.classList.remove('nn')
-  
-}
-
-coeurvideclick2.addEventListener('click',c);
-function c(){
-  coeurfull2.classList.add('nn');
-  
-}
-coeurfull2.addEventListener('click',c1);
-function c1(){
- coeurfull2.classList.remove('nn')
-  
-}
-coeurvideclick3.addEventListener('click',d);
-function d(){
-  coeurfull3.classList.add('nn');
-  
-}
-coeurfull3.addEventListener('click',d1);
-function d1(){
- coeurfull3.classList.remove('nn')
-  
-}
-
-coeurvideclick4.addEventListener('click',e);
-function e(){
-  coeurfull4.classList.add('nn');
-  
-}
-coeurfull4.addEventListener('click',e1);
-function e1(){
- coeurfull4.classList.remove('nn')
-  
-}
-
-coeurvideclick5.addEventListener('click',f);
-function f(){
-  coeurfull5.classList.add('nn');
-  
-}
-coeurfull5.addEventListener('click',f1);
-function f1(){
- coeurfull5.classList.remove('nn')
-  
-}
 
 
 
@@ -212,4 +137,81 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+btn.addEventListener('click', vues);
+
+function vues() {
+  menues.classList.toggle('vue');
+}
+
+
+
+
+
+coeurvideclick.addEventListener('click',a);
+function a(){
+  coeurfull.classList.add('nn');
+  
+}
+coeurfull.addEventListener('click',a1);
+function a1(){
+ coeurfull.classList.remove('nn')
+  
+}
+
+
+coeurvideclick1.addEventListener('click',b);
+function b(){
+  coeurfull1.classList.add('nn');
+  
+}
+coeurfull1.addEventListener('click',b1);
+function b1(){
+ coeurfull1.classList.remove('nn')
+  
+}
+
+coeurvideclick2.addEventListener('click',c);
+function c(){
+  coeurfull2.classList.add('nn');
+  
+}
+coeurfull2.addEventListener('click',c1);
+function c1(){
+ coeurfull2.classList.remove('nn')
+  
+}
+coeurvideclick3.addEventListener('click',d);
+function d(){
+  coeurfull3.classList.add('nn');
+  
+}
+coeurfull3.addEventListener('click',d1);
+function d1(){
+ coeurfull3.classList.remove('nn')
+  
+}
+
+coeurvideclick4.addEventListener('click',e);
+function e(){
+  coeurfull4.classList.add('nn');
+  
+}
+coeurfull4.addEventListener('click',e1);
+function e1(){
+ coeurfull4.classList.remove('nn')
+  
+}
+
+coeurvideclick5.addEventListener('click',f);
+function f(){
+  coeurfull5.classList.add('nn');
+  
+}
+coeurfull5.addEventListener('click',f1);
+function f1(){
+ coeurfull5.classList.remove('nn')
+  
+}
+
 
