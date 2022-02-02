@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: bisque;
+   background-image: radial-gradient(#fff, #d8f6fc9d);  
     height: 100vh;
 }
 .container {
