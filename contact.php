@@ -8,9 +8,27 @@
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
-
-<body>
+<?php
+if(isset($_POST['submit'])){
  
+
+  $name=htmlentities(trim( $_POST['name']));
+  $email=htmlentities(trim($_POST['email']));
+  $phone=htmlentities(trim( $_POST['phone']));
+  $message=htmlentities(trim ($_POST['message'])); 
+
+  if ($name&&$email&&$phone&&$message) {
+          # code...
+        }  else{
+          echo "veuller saisir tous les champs";
+        }    
+      }
+?>
+<body>
+  <?php
+      include("header.php");
+      ?>
+
 
 
       <div class="container">
@@ -58,7 +76,7 @@
             <span class="circle one"></span>
             <span class="circle two"></span>
 
-            <form action="https://formspree.io/f/xyyozjbw" method="POST" id="my-form">
+            <form action="https://formspree.io/f/xyyozjbw"  method="POST" id="my-form">
               <h3 class="title">Contact us</h3>
               <div class="input-container">
                 <input placeholder="NOM" type="text" name="name" class="input" />
