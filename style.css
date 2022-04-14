@@ -13,40 +13,118 @@
 body{
 background-image: radial-gradient(#fff, #d8f6fc9d);  
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-}
 
-.logo img{
-    height: 7em;
-    width: 100%;
-    animation: app 1s  ease-out;
+/* me kote nav la komanse */
+
+#check {
+  display: none;
+
 }
 
 
-nav{
-    flex: 1;
-    text-align: right;
-    margin-top: -50px;
+.logo img {
+  border-radius: 5px;
+  width: 250px;
+  height: 100px;
 }
-nav ul{
-    display: inline-block;
-    list-style: none;
+
+nav ul {
+  float: right;
+  margin-right: 20px;
 }
-nav li{
-    display: inline-block;
-    margin-right: 30px;
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
-nav ul li a{
-text-decoration: none;
-color: rgb(253, 6, 6);
-font-size: 20px;
+
+nav ul li a {
+  font-size: 17px;
+  color: black;
+  padding: 7px 13px;
+  border-radius: 5px;
+
 }
-nav a:hover{
-    border-bottom: solid 1px rgb(7, 7, 7);
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: rgb(100, 116, 207);
+  color: black;
+  transition: .5s;
+}
+
+.checkbtn img {
+  margin-top: 25px;
+  width: 25px;
+  float: right;
+
+  cursor: pointer;
+  /* sa se pou fe bouton meni an disparet */
+  display: none;
+}
+
+.checkbtnn img {
+  margin-top: 25px;
+  margin-left: 15px;
+  width: 25px;
+
+  float: right;
+  cursor: pointer;
+}
+
+
+@media(max-width:684.9px) {
+  .checkbtn img {
+      display: block;
+      margin-right: 40px;
+  }
+.navbar nav{
+  padding-bottom:10px;
+  position:fixed;
+  height:70px;
+  z-index:1000;
+  border-bottom:4px black solid;
+  background-color:red;
+  width:100%;
+}
+.navbar .nav{
+  margin-left:-25px;
+}
+  ul {
+      background: black;
+      text-align: center;
+      width: 100%;
+      margin-left:-1px;
+      top: -100%;
+      z-index:1000;
+      transition: all .5s;
+  }
+
+  nav ul li {
+      display: block;
+
+  }
+
+  nav ul li a {
+      font-size: 20px;
+      color: white;
+  }
+
+  .logo img {
+      width: 150px;
+      height: 70px;
+  }
+
+ nav ul li a:hover,
+ nav ul li a.active {
+      background: none;
+      color: blue;
+  }
+
+  #check:checked~ul {
+      top: 0;
+  }
 }
 .prix-all{
     max-width: 1200px;
@@ -60,7 +138,31 @@ nav a:hover{
 .prix h3{
     color: rgb(231, 228, 228);
 }
+.checkbtn img {
+    margin-top: 25px;
+    width: 25px;
+    float: right;
 
+    cursor: pointer;
+    /* sa se pou fe bouton meni an disparet */
+    display: none;
+}
+
+.checkbtnn img {
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 25px;
+
+    float: right;
+    cursor: pointer;
+}
+#check {
+    display: none;
+
+}
+@media(max-width:684.9px) {
+  
+}
 .buy{
     display: flex;
     width: 20%;
@@ -315,34 +417,59 @@ footer h5{
   .navbar{
     background-color:transparent;
   }
-  .logo{
-    width: 30%;
-  }
-  .logo img{
-    width: 200%;
-    height: 10em;
 
-  }
-    #menu{
-        visibility: visible;
-        height: 1em; 
-        margin-top: -50px; 
+
+  .checkbtn img {
+        display: block;
+        margin-right: 40px;
     }
+
+.row{
+  padding-top:100px;
+}
+#navbar{
+  padding-bottom:400px;
+}
+    ul {
+        position: fixed;
+        background: black;
+        text-align: center;
+        width: 100%;
+        top: -100%;
+        margin-top: 70px;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    .logo img {
+        width: 150px;
+        height: 70px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: none;
+        color: blue;
+    }
+
+    #check:checked~ul {
+        top: 0;
+    }
+
+ 
     .rows .col-3 img{
         width: 33%;
     }
-    #menu img{
-      visibility: visible;
-      height: 2em;
-        width: 20%;
-        margin-top: 85px;
-        float: right;
-        cursor: pointer;
-    }
-
-    nav{
-        visibility: hidden;
-    }
+   
     .col-2 h1{
         font-size:1.3em;
     }
@@ -433,7 +560,6 @@ width: 10%;
   animation: pubb4 20s ease-out infinite forwards;
 }
 
-
 .comments .profil1 {
   display:flex;
   flex-wrap: wrap;
@@ -446,6 +572,12 @@ width: 10%;
 .comments .profil1 .love{
   width: 35%;
   height: 35%;
+}
+.pub img{
+  position: absolute;
+  height: 10em;
+  width: 100%;
+  padding: 20px;
 }
 }
 
@@ -869,17 +1001,7 @@ textarea.input {
    transform: translate(0px);
    }
 }    
- 
-@keyframes nav{
- from {
-    opacity: 0;
-   transform: translateY(-100px);
-  }
-   to {
-      opacity: 1;
-     transform: translateY(0px);
-   }  
-}
+
     
 /* pub animation */
 
